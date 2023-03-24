@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>temperature converter</title>
-  <link rel="stylesheet" href="temp.css">
+  <link rel="stylesheet" href="task3.css">
   <link rel="shortcut icon" href="3.ico">
+  <title>Temperature Converter</title>
 </head>
-
 <body>
-<div class="container">
-   <div class="c">
-     <label for="celcius">celcius</label>
-     <input type="number" id="celcius">
-   </div>
-   <div class="f">
-     <label for="fahrenheit ">fahrenheit</label>
-     <input type="number" id="fahrenheit">
-   </div>
-   <!-- <div class="k">
-    <label for="kelvin">kelvin</label>
-    <input type="number" id="kelvin">
-   </div> -->
-</div>
-  <script src="temp.js"> </script>
-</body>
+  
+  <div class="container">
+    <form id ="calctemp" onsubmit="calculateTemp();
+    return false">
+    <label for="temp">   Temperature Converter</label>
+  <br>
+  <h1>Degree                       Type</h1>
+<input type="number" name="temp" id="temp" value="0">
 
+<select name="temp_diff" id= "temp_diff">
+  <option value="cel">&#176;Celsius</option>
+  <option value="fah">&#176;Fahrenheit</option>
+</select>
+<br>
+<button class="Convert" name="temp" id="Convert">Convert</button>
+<br>
+<span id="result">Result</span></form>
+  </div>
+  <script src="task3.js"></script>
+</body>
 </html>
