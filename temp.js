@@ -1,18 +1,39 @@
 
-let celcius = document.getElementById('celcius');
-let fahrenheit = document.getElementById('fahrenheit');
+const calculateTemp=() =>{
+    const inputTemp = document.getElementById('temp').value;
 
-celcius.oninput=()=>{
-  let output=(parseFloat(celcius.value)*9)/5+32;
-  fahrenheit.value =parseFloat(output.toFixed(3));
-};
+    const tempSelected = document.getElementById('temp_diff');
+    const valueTemp =temp_diff.options[tempSelected.
+        selectedIndex].value;
 
-fahrenheit.oninput=()=>{
-  let output=(parseFloat(fahrenheit.value)-32*5)/9;
-  celcius.value =parseFloat(output.toFixed(3));
-};
+// Celsius to Fahrenheit
 
-kelvin.oninput=()=>{
-  let output=(parseFloat(celcius.value)+273.15);
-  kelvin.value=parseFloat(output.toFixed(3));
-};
+const celToFah = (cel) => {
+    let fahrenheit = ((cel * 9 / 5) + 32).toFixed(1);
+     return fahrenheit;
+
+}
+
+// Fahrenheit to Celsius
+
+const fahToCel = (fah) => {
+
+let celsius = ((fah - 32) * 5/9).toFixed(2);
+
+return celsius;
+
+}
+
+if ( valueTemp == 'cel') {
+
+document.getElementById("result").innerHTML = celToFah
+ (inputTemp) + "&#176; Fahrenheit";
+
+}
+
+else {
+
+document.getElementById("result").innerHTML = fahToCel
+
+(inputTemp) + "&#176; Celsius";
+}}
