@@ -1,0 +1,48 @@
+/* @import url(''); get link from google font */
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'roboto mono', sans-serif;
+  font-size: 18px;
+}
+
+body{
+  background: url('file:///C:/Users/NITYA/Desktop/project%20folder%20oasis/task3%20temperature%20converter/img3.jpg');
+
+  background-color: #5e8b7e;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container{
+  width: 450px;
+  background-color:#fff;
+  padding: 70px, 50px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.f{
+  width: 45%;
+}
+input{
+  width: 93%;
+  height: 50px;
+  border-radius: 5px;
+  border-radius: 2px solid #fff;
+  outline: none;
+  margin: 8px;
+  padding: 0 10px;
+
+}
+.c{
+  width: 45%;
+}
+/* .k{
+  width: 45%;
+} */
